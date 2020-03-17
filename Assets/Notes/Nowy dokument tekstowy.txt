@@ -1,0 +1,3 @@
+ space_background_pack.zip -> https://opengameart.org/content/space-background-3
+ bg_1_1.png -> https://opengameart.org/content/starfield-background
+ back.png -> https://opengameart.org/content/space-background-1
