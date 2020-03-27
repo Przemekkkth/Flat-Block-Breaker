@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SplashScreen : MonoBehaviour
 {
-    [SerializeField] float timeToWait = 4f;
+    [SerializeField] float timeToWait = 3f;
     int currentSceneIndex;
     // Start is called before the first frame update
     void Start()

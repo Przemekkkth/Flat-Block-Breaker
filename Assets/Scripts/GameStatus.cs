@@ -11,6 +11,17 @@ public class GameStatus : MonoBehaviour
     //state variable
     [SerializeField] int currentScore = 0;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] int actualLevel = 0;
+
+    public int ActualLevel()
+    {
+        return actualLevel;
+    }
+
+    public void IncreaseActualLevel()
+    {
+        actualLevel += 1;
+    }
 
     private void Awake()
     {

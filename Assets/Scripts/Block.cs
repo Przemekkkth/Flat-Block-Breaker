@@ -53,7 +53,6 @@ public class Block : MonoBehaviour
     private void TriggerSparklesVFX()
     {
         GameObject vfxObject = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
-        Debug.Log("TriggerSparklesVFX");
         Destroy(vfxObject, 2f);
     }
 

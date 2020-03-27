@@ -10,9 +10,22 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(0);
         FindObjectOfType<GameStatus>().ResetGameStatus();
     }
+
+    public void LoadActualLevel()
+    {
+        int offset = 2;
+        SceneManager.LoadScene(offset + FindObjectOfType<GameStatus>().ActualLevel());
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameStatus gameStatus = FindObjectOfType<GameStatus>();
+        if(gameStatus)
+        {
+            gameStatus.IncreaseActualLevel();
+        }
+        
     }
 
     public void Quit()
