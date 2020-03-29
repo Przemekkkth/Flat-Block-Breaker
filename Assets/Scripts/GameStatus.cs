@@ -12,15 +12,29 @@ public class GameStatus : MonoBehaviour
     [SerializeField] int currentScore = 0;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int actualLevel = 0;
+    [SerializeField] int actualScore = 0;
 
     public int ActualLevel()
     {
         return actualLevel;
     }
 
+    public int ActualScore()
+    {
+        return actualScore;
+    }
+
     public void IncreaseActualLevel()
     {
         actualLevel += 1;
+        actualScore = currentScore;
+        Debug.Log("IncreaseActualLevel() => cactualLevel: " + actualLevel + " actualScore: " + actualScore);
+    }
+
+    public void UpdateActualScore()
+    {
+        currentScore = actualScore;
+        scoreText.text = currentScore.ToString();
     }
 
     private void Awake()

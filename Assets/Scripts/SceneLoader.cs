@@ -15,6 +15,7 @@ public class SceneLoader : MonoBehaviour
     {
         int offset = 2;
         SceneManager.LoadScene(offset + FindObjectOfType<GameStatus>().ActualLevel());
+        FindObjectOfType<GameStatus>().UpdateActualScore();
     }
 
     public void LoadNextScene()
