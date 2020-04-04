@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    //Config params
+    [Header("Config params")]
     [SerializeField] AudioClip blockDestroyClip;
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] Sprite[] hitSprites;
     //Cached reference
     Level level;
-    //State variables
+    [Header("State variables")]
     [SerializeField] int timesHit;
     private void OnCollisionEnter2D(Collision2D collision)
     {

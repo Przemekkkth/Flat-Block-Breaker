@@ -7,11 +7,15 @@ public class SplashScreen : MonoBehaviour
 {
     [SerializeField] float timeToWait = 3f;
     int currentSceneIndex;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if( currentSceneIndex == 0)
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 0.5f;
+        audioSource.Play();
+        if ( currentSceneIndex == 0)
         {
             StartCoroutine(WaitForTime());
         }

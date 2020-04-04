@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    const int MENU_INDEX = 1;
+    const int FIRST_LEVEL_INDEX = 2;
+
     public void LoadMenu()
     {
-        SceneManager.LoadScene(0);
-        FindObjectOfType<GameStatus>().ResetGameStatus();
+        SceneManager.LoadScene(MENU_INDEX);
+        GameStatus gameStatus = FindObjectOfType<GameStatus>();
+        if( gameStatus )
+        {
+            gameStatus.ResetGameStatus();
+        }
     }
 
     public void LoadActualLevel()
@@ -37,11 +44,16 @@ public class SceneLoader : MonoBehaviour
     public void LoadFirstLevel()
     {
         FindObjectOfType<GameStatus>().ResetGameStatus();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void LoadGameOver()
     {
         SceneManager.LoadScene("Game Over");
+    }
+
+    public void LoadOptions()
+    {
+        SceneManager.LoadScene("Options");
     }
 }
