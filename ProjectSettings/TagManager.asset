@@ -9,6 +9,7 @@ TagManager:
   - Unbreakable Block
   - Breakable Block
   - Additional Block
+  - Powers
   layers:
   - Default
   - TransparentFX

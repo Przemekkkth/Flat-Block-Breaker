@@ -47,7 +47,7 @@ public class Ball : MonoBehaviour
         if( Input.GetMouseButton(0) )
         {
             hasStarted = true;
-            rigidBody2D.velocity = new Vector2(xPush, yPush);
+            rigidBody2D.velocity = new Vector2(xPush, yPush - ( (2 - PlayerPrefsController.GetDifficulty()) * 5) );
         }
     }
 
