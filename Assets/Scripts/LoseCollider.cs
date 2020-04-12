@@ -10,5 +10,9 @@ public class LoseCollider : MonoBehaviour
         {
             FindObjectOfType<SceneLoader>().LoadGameOver();
         }
+        else
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
