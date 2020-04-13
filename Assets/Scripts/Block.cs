@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class Block : MonoBehaviour
     [SerializeField] AudioClip blockDestroyClip;
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] Sprite[] hitSprites;
+    [SerializeField] bool respawnPowers = false;
+    [SerializeField] Powers power = null;
     //Cached reference
     Level level;
     [Header("State variables")]
@@ -39,6 +42,18 @@ public class Block : MonoBehaviour
             level.BlockDestroyed();
         }
         TriggerSparklesVFX();
+        TriggerPowers();
+    }
+
+    private void TriggerPowers()
+    {
+        if(respawnPowers)
+        {
+            if(power)
+            {
+                Instantiate(power, transform.position, Quaternion.identity);
+            }
+        }
     }
 
     private void Start()

@@ -10,10 +10,16 @@ public class Paddle : MonoBehaviour
     [SerializeField] float maxX = 15f;
     [SerializeField] float scaleUp = 1.3f;
     [SerializeField] float scaleDown = 0.7f;
-    [SerializeField] float powerUpTime = 5f;
-    [SerializeField] float powerDownTime = 5f;
+    [SerializeField] float powerUpTime = 7f ;
+    [SerializeField] float powerDownTime = 7f;
 
-    void Update()
+    private void Start()
+    {
+        powerDownTime += PlayerPrefsController.GetDifficulty();
+        powerUpTime -= PlayerPrefsController.GetDifficulty();
+    }
+
+    private void Update()
     {
         Vector2 mousePositionInUnits = new Vector2( Mathf.Clamp( (Input.mousePosition.x / Screen.width) * screenWidthInUnits, minX, maxX), transform.position.y);
         transform.position = mousePositionInUnits;
@@ -67,7 +73,7 @@ public class Paddle : MonoBehaviour
         }
         Vector3 norlmalScale = theBall.transform.localScale;
         Color normalColor = theBall.GetComponent<SpriteRenderer>().color;
-        theBall.transform.localScale = new Vector2(scaleUp, scaleUp);
+        theBall.transform.localScale = new Vector2(scaleDown, scaleDown);
         theBall.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
         yield return new WaitForSeconds(powerDownTime);
         theBall.transform.localScale = norlmalScale;
