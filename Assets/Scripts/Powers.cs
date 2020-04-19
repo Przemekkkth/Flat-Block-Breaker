@@ -84,6 +84,7 @@ public class Powers : MonoBehaviour
         if(collision.tag == "Paddle")
         {
             FindObjectOfType<Paddle>().SetPowers(this);
+            Destroy(gameObject);
         }
     }
 

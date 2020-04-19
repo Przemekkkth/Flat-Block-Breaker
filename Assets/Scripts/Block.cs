@@ -10,7 +10,9 @@ public class Block : MonoBehaviour
     [SerializeField] GameObject blockSparklesVFX;
     [SerializeField] Sprite[] hitSprites;
     [SerializeField] bool respawnPowers = false;
+    [SerializeField] bool respawnLaserPlatform = false;
     [SerializeField] Powers power = null;
+    [SerializeField] LaserPlatform laserPlatform = null;
     //Cached reference
     Level level;
     [Header("State variables")]
@@ -32,7 +34,7 @@ public class Block : MonoBehaviour
         }
     }
 
-    private void BlockDestroy()
+    public void BlockDestroy()
     {
         FindObjectOfType<GameStatus>().AddToScore();
         Destroy(gameObject);
@@ -43,6 +45,22 @@ public class Block : MonoBehaviour
         }
         TriggerSparklesVFX();
         TriggerPowers();
+        TriggerLaserPlatform();
+    }
+
+    private void TriggerLaserPlatform()
+    {
+        if (respawnLaserPlatform)
+        {
+            if(FindObjectOfType<LaserPlatform>())
+            {
+                return;
+            }
+            if (laserPlatform)
+            {
+                Instantiate(laserPlatform, transform.position, Quaternion.identity);
+            }
+        }
     }
 
     private void TriggerPowers()

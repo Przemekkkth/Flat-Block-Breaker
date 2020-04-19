@@ -10,6 +10,7 @@ TagManager:
   - Breakable Block
   - Additional Block
   - Powers
+  - Wall
   layers:
   - Default
   - TransparentFX

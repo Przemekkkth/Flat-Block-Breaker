@@ -126,4 +126,9 @@ MonoBehaviour:
   hitSprites:
   - {fileID: 21300000, guid: 626b762ad13d4af448eaf21d90ed535b, type: 3}
   - {fileID: 21300000, guid: 13ab137ad88905b48991026368ccaee6, type: 3}
+  respawnPowers: 0
+  respawnLaserPlatform: 0
+  power: {fileID: 2619338878477417880, guid: 9f61d75ea4297214d8306ceba13a26d0, type: 3}
+  laserPlatform: {fileID: 1017330340490029036, guid: c4f4bacfdb648294d8b0ae6257cf75ef,
+    type: 3}
   timesHit: 0
