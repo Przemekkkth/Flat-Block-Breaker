@@ -130,3 +130,7 @@ MonoBehaviour:
   screenWidthInUnits: 16
   minX: 1
   maxX: 15
+  scaleUp: 1.3
+  scaleDown: 0.7
+  powerUpTime: 7
+  powerDownTime: 7

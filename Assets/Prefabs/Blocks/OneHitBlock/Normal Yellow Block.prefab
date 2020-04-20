@@ -124,7 +124,7 @@ MonoBehaviour:
   blockSparklesVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5,
     type: 3}
   hitSprites: []
-  respawnPowers: 0
+  respawnPowers: 1
   respawnLaserPlatform: 0
   power: {fileID: 2619338878477417880, guid: 9f61d75ea4297214d8306ceba13a26d0, type: 3}
   laserPlatform: {fileID: 1017330340490029036, guid: c4f4bacfdb648294d8b0ae6257cf75ef,

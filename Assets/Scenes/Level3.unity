@@ -2703,7 +2703,7 @@ PrefabInstance:
     - target: {fileID: 4157421448021062298, guid: 5981cc96f8f9f824da0124a5c558de6e,
         type: 3}
       propertyPath: m_TagString
-      value: Ball
+      value: Paddle
       objectReference: {fileID: 0}
     - target: {fileID: 4157421448021062296, guid: 5981cc96f8f9f824da0124a5c558de6e,
         type: 3}
@@ -3051,11 +3051,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3199213092307279355, guid: 20adbd410278bd94e9cf34d1e2faaf96,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6898274681823582781, guid: 20adbd410278bd94e9cf34d1e2faaf96,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -3080,6 +3075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199213092307279355, guid: 20adbd410278bd94e9cf34d1e2faaf96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6898274681823582778, guid: 20adbd410278bd94e9cf34d1e2faaf96,
         type: 3}

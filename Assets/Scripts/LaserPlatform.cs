@@ -47,7 +47,6 @@ public class LaserPlatform : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("Started");
             Instantiate(laser, transform.position, transform.rotation);
             isActivated = false;
         }
