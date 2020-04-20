@@ -2759,6 +2759,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 424370954, guid: 7bcea726c9ecafc4299fefa4e90ff6bf, type: 3}
+      propertyPath: respawnLaserPlatform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bcea726c9ecafc4299fefa4e90ff6bf, type: 3}
 --- !u!4 &1492406735 stripped
@@ -3133,6 +3137,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424370954, guid: 53cf22bb0efefbc4087c65504898ba00, type: 3}
+      propertyPath: respawnLaserPlatform
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53cf22bb0efefbc4087c65504898ba00, type: 3}
@@ -3725,6 +3733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 424370954, guid: 7bcea726c9ecafc4299fefa4e90ff6bf, type: 3}
+      propertyPath: respawnLaserPlatform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bcea726c9ecafc4299fefa4e90ff6bf, type: 3}
 --- !u!4 &1918923524 stripped
@@ -3877,6 +3889,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 424370954, guid: 53cf22bb0efefbc4087c65504898ba00, type: 3}
       propertyPath: respawnPowers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424370954, guid: 53cf22bb0efefbc4087c65504898ba00, type: 3}
+      propertyPath: respawnLaserPlatform
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
