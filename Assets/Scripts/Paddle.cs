@@ -32,19 +32,15 @@ public class Paddle : MonoBehaviour
         switch( powers.Index() )
         {
             case 0:
-                Debug.Log("SetPowers 0");
                 StartCoroutine(SetLargerBall());
                 break;
             case 1:
-                Debug.Log("SetPowers 1");
                 StartCoroutine(SetSmallerAndSemiTransparentBall());
                 break;
             case 2:
-                Debug.Log("SetPowers 2");
                 StartCoroutine(SetLargerPaddle());
                 break;
             case 3:
-                Debug.Log("SetPowers 3");
                 StartCoroutine(SetSmallerPaddle());
                 break;
             default:
