@@ -5,3 +5,8 @@ It is a simple game in Unity Engine. The game is clone of a very popular concept
 ![options](https://user-images.githubusercontent.com/28188300/80248507-56dcee00-8670-11ea-83cf-4d6302b4b69f.png)
 ![gameplay1](https://user-images.githubusercontent.com/28188300/80248508-580e1b00-8670-11ea-9b09-b314cfeae0ea.png)
 ![gameplay2](https://user-images.githubusercontent.com/28188300/80248509-58a6b180-8670-11ea-9d61-3a39c3aa3dff.png)
+## Getting start
+You can download code from here:
+`https://github.com/Przemekkkth/Flat-Block-Breaker.git`
+or play it on:
+`https://sharemygame.com/@Bondrusiek/flatblockbreaker`
